@@ -146,7 +146,7 @@ class Airplane {
      return `Today we are learning about ${subject}`
    }
    grade(student, subject){
-     return `${student} receives a perfect score on ${subject}`
+     return `${student.name} receives a perfect score on ${subject}`
    }
  }
 
@@ -165,7 +165,7 @@ class Airplane {
           + `PRAssignment` a method that receives a subject as an argument and returns `student.name has submitted a PR for {subject}`
           + `sprintChallenge` similar to PRAssignment but returns `student.name has begun sprint challenge on {subject}`
   */
- 
+
  class Student extends Lambdasian {
    constructor(attrs){
      super(attrs);
@@ -207,7 +207,7 @@ class Airplane {
      return `${this.name} announces to ${channel}, @channel standy times!`;
    }
    debugsCode(student, subject){
-     return `${this.name} debugs ${student}'s code on ${subject}`;
+     return `${this.name} debugs ${student.name}'s code on ${subject}`;
    }
  }
   /*
